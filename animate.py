@@ -398,10 +398,10 @@ def main():
         interval=interval,
         repeat=sim.loop,
     )
-    anim.save("animation.gif", writer="imagemagick", fps=50)
+    # anim.save("animation.gif", writer="imagemagick", fps=50)
 
     plt.grid()
-    # plt.show()
+    plt.show()
 
 
 if __name__ == "__main__":
