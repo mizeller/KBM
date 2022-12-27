@@ -11,7 +11,8 @@ import pickle
 with open("data/strtree.pickle", "rb") as f:
     rtree = pickle.load(f)
 
-from libs import CarDescription, generate_cubic_spline
+from car_description import CarDescription
+from cubic_spline_interpolator import generate_cubic_spline
 from kinematic_model import KinematicBicycleModel
 
 

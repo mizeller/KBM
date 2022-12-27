@@ -1,0 +1,1 @@
+Stripped down & adapted version from https://github.com/winstxnhdw/KinematicBicycleModel.
