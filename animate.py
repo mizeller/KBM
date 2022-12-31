@@ -149,12 +149,10 @@ class StanleyController:
 class Simulation:
     def __init__(self):
 
-        fps = 50.0
-
-        self.dt = 1 / fps
+        self.dt = 0.1
         self.map_size_x = 70
         self.map_size_y = 40
-        self.frames = 1050  # 2500
+        self.frames = 500
         self.loop = False
 
 
@@ -223,7 +221,7 @@ class Car:
 
     def drive(self):
 
-        throttle = uniform(150, 200)
+        throttle = uniform(150, 200) / 5
         (
             self.delta,
             self.target_id,
